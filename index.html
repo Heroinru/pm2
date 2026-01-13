@@ -258,98 +258,65 @@
         </div>
     </section>
 
-<!-- БЛОК ДО/ПОСЛЕ (Слайдер) -->
+<!-- Портфолио (Галерея работ) -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="font-serif text-3xl md:text-4xl text-stone-800 mb-4">Результат "На лицо"</h2>
-                <p class="text-stone-500">Потяните ползунок, чтобы увидеть разницу.</p>
+                <h2 class="font-serif text-3xl md:text-4xl text-stone-800 mb-4">Мои работы</h2>
+                <p class="text-stone-500">Эстетика. Натуральность. Безупречность.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+            <!-- Сетка фотографий -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 max-w-6xl mx-auto">
                 
-                <!-- Слайдер 1: Брови (Пара 1-2) -->
-                <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-lg select-none group border border-stone-100">
-                     <!-- Фото ПОСЛЕ (Фон) - brow_2.png -->
-                     <img src="IMG/brows_after.jpg" alt="Перманент бровей после" class="absolute inset-0 w-full h-full object-cover">
-                     <div class="absolute top-4 right-4 bg-white/80 px-2 py-1 text-xs font-bold rounded shadow-sm text-sage-700">ПОСЛЕ</div>
-
-                     <!-- Фото ДО (Сверху, в шторке) - brow_1.png -->
-                     <div id="divisor1" class="absolute top-0 left-0 h-full w-1/2 overflow-hidden border-r-2 border-sage-500 bg-stone-100">
-                        <img src="IMG/brows_before.jpg" alt="Перманент бровей до" class="absolute top-0 left-0 max-w-none h-full object-cover" style="width: 200%;"> 
-                        <div class="absolute top-4 left-4 bg-white/80 px-2 py-1 text-xs font-bold rounded text-stone-700 shadow-sm">ДО</div>
-                     </div>
-
-                     <!-- Ползунок -->
-                     <input type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20" oninput="moveDivisor(this, 'divisor1', 'handle1')">
-                     
-                     <!-- Кнопка со стрелками -->
-                     <div id="handle1" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-xl z-10 pointer-events-none text-sage-600 border border-stone-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 4H14.5a.5.5 0 0 0 .5-.5z"/></svg>
-                     </div>
+                <!-- Фото 1 -->
+                <div class="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-500">
+                    <img src="IMG/port_1.jpg" alt="Перманентный макияж бровей" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-sage-500/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
                 </div>
 
-                <!-- Слайдер 2: Брови (Пара 3-4) -->
-                <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-lg select-none group border border-stone-100">
-                    <!-- Фото ПОСЛЕ (Фон) - brow_4.png -->
-                    <img src="IMG/lips_after.jpg" alt="Перманентный макияж после" class="absolute inset-0 w-full h-full object-cover">
-                    <div class="absolute top-4 right-4 bg-white/80 px-2 py-1 text-xs font-bold rounded shadow-sm text-sage-700">ПОСЛЕ</div>
+                <!-- Фото 2 -->
+                <div class="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-500">
+                    <img src="IMG/port_2.jpg" alt="Аппаратный маникюр" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-sage-500/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                </div>
 
-                    <!-- Фото ДО (Сверху, в шторке) - brow_3.png -->
-                    <div id="divisor2" class="absolute top-0 left-0 h-full w-1/2 overflow-hidden border-r-2 border-sage-500 bg-stone-100">
-                       <img src="IMG/lips_before.jpg" alt="Перманентный макияж до" class="absolute top-0 left-0 max-w-none h-full object-cover" style="width: 200%;">
-                       <div class="absolute top-4 left-4 bg-white/80 px-2 py-1 text-xs font-bold rounded text-stone-700 shadow-sm">ДО</div>
-                    </div>
+                <!-- Фото 3 -->
+                <div class="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-500">
+                    <img src="IMG/port_3.jpg" alt="Перманент губ" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-sage-500/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                </div>
 
-                    <!-- Ползунок -->
-                    <input type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20" oninput="moveDivisor(this, 'divisor2', 'handle2')">
-                    
-                    <!-- Кнопка со стрелками -->
-                    <div id="handle2" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-xl z-10 pointer-events-none text-sage-600 border border-stone-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 4H14.5a.5.5 0 0 0 .5-.5z"/></svg>
-                    </div>
-               </div>
+                <!-- Фото 4 -->
+                <div class="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-500">
+                    <img src="IMG/port_4.jpg" alt="Педикюр обработка стоп" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-sage-500/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                </div>
+
+                <!-- Фото 5 -->
+                <div class="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-500">
+                    <img src="IMG/port_5.jpg" alt="Межресничка" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-sage-500/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                </div>
+
+                <!-- Фото 6 -->
+                <div class="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer shadow-sm hover:shadow-xl transition duration-500">
+                    <img src="IMG/port_6.jpg" alt="Наращивание ногтей" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-sage-500/20 opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                </div>
+
             </div>
-            
-            <p class="text-center text-stone-400 text-sm mt-6">Реальные работы мастера Елены Севастьяновой</p>
-        </div>
-    </section>
 
-    <!-- Безопасность -->
-    <section class="py-20 bg-stone-50 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2 relative">
-                    <img src="IMG/safety.jpg" alt="Стерилизация инструментов" class="rounded-2xl shadow-lg w-full">
-                    <div class="absolute -bottom-6 -right-6 bg-sage-500 text-white p-6 rounded-xl hidden md:block">
-                        <p class="font-serif text-2xl">180°C</p>
-                        <p class="text-xs opacity-90">Температура стерилизации</p>
-                    </div>
-                </div>
-                <div class="md:w-1/2 space-y-6">
-                    <h2 class="font-serif text-3xl md:text-4xl text-stone-800">Безопаснее, чем в<br>операционной</h2>
-                    <p class="text-stone-600 leading-relaxed">
-                        Я имею медицинское образование и знаю, что такое асептика. Ваше здоровье — мой приоритет.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="text-sage-500 mr-3">✓</span>
-                            <span class="text-stone-700 text-sm"><strong>3 этапа обработки:</strong> дезраствор, промывка, сухожаровой шкаф (1.5 часа).</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-sage-500 mr-3">✓</span>
-                            <span class="text-stone-700 text-sm"><strong>Одноразовые расходники:</strong> Иглы, пилки, насадки — всё вскрывается при вас.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-sage-500 mr-3">✓</span>
-                            <span class="text-stone-700 text-sm"><strong>Сертифицированные пигменты:</strong> Etalon Mix, Face, Tinel. Не уходят в синий/красный.</span>
-                        </li>
-                    </ul>
-                </div>
+            <!-- Кнопка "Больше работ" -->
+            <div class="mt-12 text-center">
+                <a href="https://t.me/S_lena_pm" target="_blank" class="inline-flex items-center border border-stone-300 text-stone-600 px-8 py-3 rounded-full hover:bg-stone-50 hover:border-sage-500 hover:text-sage-600 transition duration-300">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    Смотреть больше работ в Telegram
+                </a>
             </div>
         </div>
     </section>
-
+   
     <!-- О мастере -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 max-w-5xl">
@@ -435,10 +402,12 @@
             <div>
                 <div>
                 <div>
-                <!-- Адаптированная Яндекс.Карта (Обновленная ссылка) -->
+                
+<div>
+                <!-- Адаптированная Яндекс.Карта (Se_lena. Pm) -->
                 <div class="w-full rounded-xl overflow-hidden shadow-lg h-[350px] relative bg-stone-800">
                     <iframe 
-                        src="https://yandex.ru/map-widget/v1/?ll=37.764492%2C55.448699&mode=search&oid=212736459153&ol=biz&sll=37.764492%2C55.448699&sspn=0.011486%2C0.004850&text=%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D0%BA%D0%B8%D1%8F%D0%B6&utm_source=main_stripe_big&z=16.22" 
+                        src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.764492%2C55.448699&mode=search&oid=212736459153&ol=biz&source=mapframe&utm_source=mapframe&z=16.89" 
                         width="100%" 
                         height="100%" 
                         frameborder="0" 
